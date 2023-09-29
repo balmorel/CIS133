@@ -1,0 +1,35 @@
+
+body { font-family: 'Times New Roman', Times, serif;
+       font-size: 16px;
+}
+
+h1 { font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 36px;
+     color: rgb(33, 87, 51);
+     background-color: rgb(75, 133, 94);
+     text-align: center;
+}
+
+h2 { font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 24px;
+     color: rgb(33, 87, 51)
+}
+
+h3 { font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 20px;
+     color: rgb(33, 87, 51)
+}
+
+
+#hrStyle { background-color: rgb(33, 87, 51);
+          height: 3px;
+}
+
+
+.test { color: brown;
+        font-size: 1.2em;
+        font-family: Verdana;
+}
+
+#address { text-align: center;
+}
