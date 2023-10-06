@@ -1,0 +1,21 @@
+
+
+img {
+       height: 250px;
+       width: 350px;
+       border-style: groove;
+}
+
+#i1 {
+       border-radius: 10px;
+     }
+#i2 {
+       box-shadow: 5px 5px 5px;
+     }
+#i3 {
+       opacity: 0.3;
+     }
+#i4 {
+       filter: grayscale(75%);
+     }
+
