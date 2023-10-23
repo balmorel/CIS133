@@ -21,6 +21,32 @@ nav {
 	text-align: center;
 }
 
+a:link   {
+    color: teal;
+}
+
+a:visited {
+    color: teal;
+}
+
+a:hover {
+    color: white;
+    background-color: #002171;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    padding: 25px;
+}
+
 main { 
     padding-left: 2em;
     padding-right: 2em;
@@ -74,3 +100,4 @@ h3 {
     max-width: 2048px;
     box-shadow: 3px 3px 3px #777;
 }
+
