@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+
+    <style>
+
+        * { box-sizing: border-box; } 
+
+        form {
+            margin: 0 auto;
+            width: 500px;
+            margin-top: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: small;
+        }
+
+        #styleHead {
+            font-size: larger;
+            font-weight: bold; 
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 0;
+
+        }
+
+        .halfleft {
+            float: left;
+            width: 49.5%;
+        }
+
+        .halfright {
+            float: right;
+            width: 49.5%;
+        }
+
+    </style>
+
+</head>
+
+
+</head>
+
+<body>
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan="5" style="width: 250px; padding-right: 5px; padding-left: 0px;"><img src="./images/workShirtAlt.png" /></td>
+                    <td id="styleHead" style="width: 250px; padding-left: 5px;">Company Logo Shirt</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <select size="1" name="shirtcolor" id="shirtcolor">
+                            <option>Select Color:</option>
+                            <option value="blue">Blue</option>
+                            <option value="blue">White</option>
+                            <option value="blue">Green</option>
+                            <option value="blue">Red</option>
+                            <option value="blue">Black</option>
+                        </select>
+                     &nbsp;Quantity: <input type="text" size="3" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Size: 
+                        <input type="radio" name="size">Small
+                        <input type="radio" name="size">Medium
+                        <input type="radio" name="size">Large
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox">Include Logo</td>
+                </tr>
+
+                <tr>
+                    <td><input type="file" name="chooseFile" id="chooseFile"></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <hr color="gray">
+
+        <table>
+            <tbody>
+
+                <tr>
+                    <td colspan="3">
+                        <input type="text" placeholder="First Name" class="halfleft" />
+                        <input type="text" placeholder="Last Name" class="halfright" />
+                    </td>
+                </tr>   
+
+                <tr>
+                    <td colspan="3"><input type="address" placeholder="Address" style="width:100%" /></td>
+                </tr>
+
+
+
+                
+
+                <tr>
+                    <td colspan="3">
+                        <input type="text" placeholder="City" style="width:32.5%" />
+                        <input type="text" placeholder="State" style="width:32.5%" />
+                        <input type="text" placeholder="Zip" style="width:32.5%; float: right;" />
+                    </td>
+                </tr>   
+
+
+
+
+                <tr>
+                    <td colspan="3"><input type="email" placeholder="Email" style="width:100%" /></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3"><input type="address" placeholder="Phone Number" style="width:100%" /></td>
+                </tr>
+
+                <tr>
+                    <td>Best Delivery Date:</td>
+                    <td colspan="2"><input type="date" style="float: right; width: 250px;"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3"><textarea rows="3" cols="70" style="resize: none;"></textarea></td> 
+                </tr>
+
+                <tr>
+                    <td colspan="3" style="text-align: right"><input type="Submit" value="Submit"></td> 
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
