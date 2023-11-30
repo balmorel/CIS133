@@ -40,7 +40,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:right;"">
+                <td colspan="2" style="text-align:right;">
                     <input type="button" value="Cancel" onclick="cancelTicket()" />
                     <input type="button" value="Print Ticket" onclick="printTicket()" />
                 </td>
@@ -68,10 +68,42 @@
 
     var name = window.prompt('Enter your first name');
     var date = window.prompt('Enter the date you want to visit');
+
     document.title = `${name}'s Ticket to Animal Amigos`;
     document.getElementById('ownerName').innerText = name;
     document.getElementById('visitDate').innerText = date;
 
+
+    function printTicket() {
+        var amigoName = document.getElementById('amigo_name').value;
+        document.getElementById('amigoName').innerText = amigoName;
+
+        document.getElementById('form').style.display = "none";
+
+        correctImage();
+        
+        // have alert popup delay for a half a second
+        setTimeout( function ( ) { alert( "Your ticket is ready for printing" ); }, 500 ); 
+
+
+    }
+
+    // ensure appropriate image is displayed based on form selection
+    function correctImage() {
+        var amigoType = document.getElementById('amigo_type').value;
+        var animalSize = document.getElementsByName('amigo_size');
+        var amigoSize = ""
+
+        for (var i = 0; i < animalSize.length; i++) {
+            if (animalSize[i].checked) {
+                amigoSize = animalSize[i].value;
+                break;
+            }
+        }
+        var url = `./images/${amigoType}-${amigoSize}.jpg`;
+        document.getElementById('amigoPicture').src = url;
+    }
+  
     function cancelTicket() {
         window.close();
     }
